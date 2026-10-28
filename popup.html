@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Baton</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" width="34" height="34" alt="">
+    <div>
+      <h1>Baton</h1>
+      <p>Switch AI. Keep the conversation.</p>
+    </div>
+  </header>
+
+  <div id="notice" class="notice hidden">Open a chat on ChatGPT, Claude or Gemini in this tab to use Baton. If you just installed it, reload the tab.</div>
+
+  <div class="btns">
+    <button id="export"><b>⬇</b>Export</button>
+    <button id="copy"><b>⧉</b>Copy</button>
+    <button id="import"><b>⬆</b>Import</button>
+  </div>
+
+  <div class="seg">
+    <button id="full" data-m="full">Full chat</button>
+    <button id="short" data-m="short">Short version</button>
+  </div>
+  <p id="hint" class="hint"></p>
+  <p id="status" class="status"></p>
+
+  <ol class="steps">
+    <li>Open the chat you want to move and click <b>Export</b>.</li>
+    <li>Open ChatGPT, Claude or Gemini and click <b>Import</b>.</li>
+    <li>Choose the file, then <b>Insert</b>. Press Send yourself.</li>
+  </ol>
+
+  <footer>Everything stays on your device. No servers, no tracking.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
